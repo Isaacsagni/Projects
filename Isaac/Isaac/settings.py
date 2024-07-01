@@ -54,7 +54,7 @@ ROOT_URLCONF = 'Isaac.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')], # config code for templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
