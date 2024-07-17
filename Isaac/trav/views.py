@@ -17,7 +17,7 @@ def index(request):
     Cloth2.img = 'p8.png'
 
     Cloth3 = Cloth()
-    Cloth3.name = "Men's Shirt"
+    Cloth3.name = "Casual Men's Shirt"
     Cloth3.price = 70
     Cloth3.img = 'p10.png'
 
