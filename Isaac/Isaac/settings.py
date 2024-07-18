@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'trav.apps.TravConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -76,8 +77,12 @@ WSGI_APPLICATION = 'Isaac.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        #Code for connect our system to database
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Sagini',
+        'USER' : 'postgres',
+        'PASSWORD' : '2024',
+        'HOST' : 'localhost'
     }
 }
 
